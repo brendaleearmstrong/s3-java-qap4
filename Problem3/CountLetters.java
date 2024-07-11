@@ -1,5 +1,5 @@
 // ****************************************************************
-// CountLetters.java
+// Modified CountLetters.java
 //
 // Reads a word from the standard input and prints the number of 
 // occurrences of each letter in that word.
