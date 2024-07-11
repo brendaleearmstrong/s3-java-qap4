@@ -1,7 +1,14 @@
-// Circle.java
+/**
+ * Represents a Circle shape.
+ */
 public class Circle extends Shape {
     private double radius;
 
+    /**
+     * Constructor for Circle.
+     * @param name The name of the circle
+     * @param radius The radius of the circle
+     */
     public Circle(String name, double radius) {
         super(name);
         this.radius = radius;

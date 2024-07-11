@@ -1,7 +1,16 @@
-// Triangle.java
+/**
+ * Represents a Triangle shape.
+ */
 public class Triangle extends Shape {
     protected double side1, side2, side3;
 
+    /**
+     * Constructor for Triangle.
+     * @param name The name of the triangle
+     * @param side1 Length of first side
+     * @param side2 Length of second side
+     * @param side3 Length of third side
+     */
     public Triangle(String name, double side1, double side2, double side3) {
         super(name);
         if (isValidTriangle(side1, side2, side3)) {
