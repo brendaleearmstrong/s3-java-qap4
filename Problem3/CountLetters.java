@@ -1,9 +1,8 @@
 // ****************************************************************
-// CountLetters.java
+// Modified CountLetters.java
 //
-// Reads a words from the standard input and prints the number of 
+// Reads a word from the standard input and prints the number of 
 // occurrences of each letter in that word.
-//          
 // ****************************************************************
 import java.util.Scanner;
 public class CountLetters
@@ -25,9 +24,7 @@ public class CountLetters
             try {
                 counts[word.charAt(i)-'A']++;
             } catch (ArrayIndexOutOfBoundsException e) {
-                // First, catch the exception but do nothing
-                // Uncomment the following line for the second part of the task
-                // System.out.println("Not a letter: " + word.charAt(i));
+                System.out.println("Not a letter: " + word.charAt(i));
             }
         }
 
@@ -36,6 +33,5 @@ public class CountLetters
         for (int i=0; i < counts.length; i++)
             if (counts [i] != 0)
                 System.out.println((char)(i +'A') + ": " + counts[i]);
-
     }
 }
